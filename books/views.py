@@ -16,5 +16,5 @@ def book_detail(request,id):
     return render(request,'books/book_detail.html', context)
 
 def book_create_update(request):
-    return render(request)
+    return render(request,'books/book_form.html')
 
