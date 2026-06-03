@@ -12,7 +12,11 @@
         
     {% endblock %}
     <br>
-    <a href="{% url 'home'%}">home</a>
-    
+{% if request.path != '/' %}
+
+    <a href="/">Home</a>
+
+{% endif %}
+
 </body>
 </html>
