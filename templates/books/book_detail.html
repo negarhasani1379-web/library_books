@@ -8,5 +8,7 @@
 <p> Title:{{ book.title }}</p>
 <p>Author:{{ book.author }}</p>
 <p>Publish Date:{{ book.date_published }}</p> 
-<p>ISBN:{{ book.isbn }}</p>      
+<p>ISBN:{{ book.isbn }}</p>  
+<a href="{% url 'book_list'%}">back to list</a> 
+<br>   
 {% endblock %}
